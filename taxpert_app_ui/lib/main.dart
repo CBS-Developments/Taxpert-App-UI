@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:pattern_formatter/numeric_formatter.dart';
 
+import 'methods/sizes.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -137,6 +139,7 @@ int grossSalaryId = 0;
     double sizeWidth = MediaQuery.of(context).size.width;
     double textFontNormal = (sizeHeight * 0.012) * (sizeWidth * 0.0008);
     double textFontLarge = (sizeHeight * 0.020) * (sizeWidth * 0.001);
+    
     return Scaffold(
       // backgroundColor: Colors.green[50],
       body: Row(
