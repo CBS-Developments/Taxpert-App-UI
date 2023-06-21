@@ -17,13 +17,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp(
       // home:  MyHomePage(),
-      // debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: false,
       home: ResponsiveLayout(
         mobileBody:  const MobileScaffold(),
         tabletBody: const TabletScaffold(),
         desktopBody: const DesktopScaffold(),
       ),
-      debugShowCheckedModeBanner: false,
+      // debugShowCheckedModeBanner: false,
     );
   }
 }
