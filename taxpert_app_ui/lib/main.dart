@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:pattern_formatter/numeric_formatter.dart';
-
-import 'methods/sizes.dart';
+import 'package:taxpert_app_ui/responsive/desktop_body.dart';
+import 'package:taxpert_app_ui/responsive/mobile_body.dart';
+import 'package:taxpert_app_ui/responsive/responsive_layout.dart';
+import 'package:taxpert_app_ui/responsive/tablet_body.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,8 +15,14 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home:  MyHomePage(),
+    return  MaterialApp(
+      // home:  MyHomePage(),
+      // debugShowCheckedModeBanner: false,
+      home: ResponsiveLayout(
+        mobileBody:  const MobileScaffold(),
+        tabletBody: const TabletScaffold(),
+        desktopBody: const DesktopScaffold(),
+      ),
       debugShowCheckedModeBanner: false,
     );
   }
@@ -139,7 +147,6 @@ int grossSalaryId = 0;
     double sizeWidth = MediaQuery.of(context).size.width;
     double textFontNormal = (sizeHeight * 0.012) * (sizeWidth * 0.0008);
     double textFontLarge = (sizeHeight * 0.020) * (sizeWidth * 0.001);
-    
     return Scaffold(
       // backgroundColor: Colors.green[50],
       body: Row(
