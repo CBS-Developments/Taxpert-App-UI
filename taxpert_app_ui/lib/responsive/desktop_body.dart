@@ -75,7 +75,7 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
 
 
           Container(
-            color: Colors.redAccent,
+            color: Colors.white,
             width: TextContWidth(context),
             child: Column(
               children: [
@@ -142,6 +142,68 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
                     childText:'Donation to Government',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
+
+                SizedBox(
+                  height: LaSizeBoxHeight(context),
+                ),
+
+                TextContainer(
+                    childText:'Tax Credits',
+                    fontSize: getFontLarge(context),
+                    textColor: Colors.green),
+
+                TextContainer(
+                    childText:'Installment Payment',
+                    fontSize: getFontMe(context),
+                    textColor: Colors.black),
+
+                SizedBox(
+                  height: MeSizeBoxHeight(context),
+                ),
+
+                GestureDetector(onTap: (){},
+                  child: TextContainer(
+                      childText:'Click here to get computation',
+                      fontSize: getFontLarge(context),
+                      textColor: Colors.blue),
+                ),
+
+                SizedBox(
+                  height: MeSizeBoxHeight(context),
+                ),
+
+                TextContainer(
+                    childText:'Tax Summary:',
+                    fontSize: getFontLarge(context),
+                    textColor: Colors.green),
+
+                TextContainer(
+                    childText:'Total Gains and Profits',
+                    fontSize: getFontMe(context),
+                    textColor: Colors.black),
+
+                TextContainer(
+                    childText:'Tax Payable',
+                    fontSize: getFontMe(context),
+                    textColor: Colors.black),
+
+                TextContainer(
+                    childText:'Tax Deducted at Source (TDS)',
+                    fontSize: getFontMe(context),
+                    textColor: Colors.black),
+
+                TextContainer(
+                    childText:'Self Assessment Payment',
+                    fontSize: getFontMe(context),
+                    textColor: Colors.black),
+
+                TextContainer(
+                    childText:'Balance Tax Payable/(Refunds',
+                    fontSize: getFontMe(context),
+                    textColor: Colors.black),
+
+
+
 
 
 
