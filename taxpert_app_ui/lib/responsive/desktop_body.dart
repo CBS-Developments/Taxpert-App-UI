@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:taxpert_app_ui/methods/my_button.dart';
 import 'package:taxpert_app_ui/methods/sizes.dart';
 
 class DesktopScaffold extends StatefulWidget {
@@ -19,10 +20,16 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
         children: [
           Container(
             width: GContainerWidth(context),
-            color: Colors.green,
+            color: Colors.green.shade400,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+
+                Image.asset('images/cal.png',
+                  width:ImageWidth(context),
+                  height: ImageHeight(context),
+                ),
+
                 Text(
                   "Estimate Individual Tax Payable",
                   style: TextStyle(
@@ -51,6 +58,14 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
                   ),
                   textAlign: TextAlign.center,
                 ),
+
+                SizedBox(height: MeSizeBoxHeight(context) ,),
+
+                MyButton(onTap: (){}, childText: 'Login'),
+
+
+
+
 
 
 
