@@ -23,6 +23,10 @@ double getFontLarge(BuildContext context) {
   return (getPageWidth(context) * 0.004) * (getPageHeight(context) * 0.004);
 }
 
+double getFontMe(BuildContext context) {
+  return (getPageWidth(context) * 0.0036) * (getPageHeight(context) * 0.0036);
+}
+
 double getFontNormal(BuildContext context) {
   return (getPageWidth(context) * 0.0033) * (getPageHeight(context) * 0.0033);
 }
@@ -49,4 +53,16 @@ double ImageHeight(BuildContext context) {
 
 double ImageWidth(BuildContext context) {
   return (getPageWidth(context) * 0.1) ;
+}
+
+double TextContHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.045) ;
+}
+
+double TextContWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.23) ;
+}
+
+double TextContMargin(BuildContext context) {
+  return (getPageWidth(context) * 0.005) ;
 }
