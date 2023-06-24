@@ -9,7 +9,6 @@ double getPageHeight(BuildContext context) {
   return MediaQuery.of(context).size.height;
 }
 
-
 double SmSizeBoxHeight(BuildContext context){
   return (MediaQuery.of(context).size.height)*0.002;
 }
@@ -17,7 +16,6 @@ double SmSizeBoxHeight(BuildContext context){
 double GContainerWidth(BuildContext context){
   return (MediaQuery.of(context).size.width)*0.23;
 }
-
 
 double getFontLarge(BuildContext context) {
   return (getPageWidth(context) * 0.004) * (getPageHeight(context) * 0.004);
@@ -46,6 +44,7 @@ double buttonFont(BuildContext context) {
 double MeSizeBoxHeight(BuildContext context){
   return (MediaQuery.of(context).size.height)*0.01;
 }
+
 double LaSizeBoxHeight(BuildContext context){
   return (MediaQuery.of(context).size.height)*0.02;
 }
