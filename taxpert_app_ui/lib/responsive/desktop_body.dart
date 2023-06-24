@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:taxpert_app_ui/methods/blank_container.dart';
 import 'package:taxpert_app_ui/methods/my_button.dart';
 import 'package:taxpert_app_ui/methods/sizes.dart';
 import 'package:taxpert_app_ui/methods/text_container.dart';
+
+import '../methods/textfeild_container.dart';
 
 class DesktopScaffold extends StatefulWidget {
   const DesktopScaffold({super.key});
@@ -11,6 +14,110 @@ class DesktopScaffold extends StatefulWidget {
 }
 
 class _DesktopScaffoldState extends State<DesktopScaffold> {
+  int grossSalaryId = 0;
+  int profitsFromBusinessId = 0;
+  int interestIncomeId = 0;
+  int dividendIncomeId = 0;
+  int rentIncomeId = 0;
+  int otherIncomeId = 0;
+  int healthMedicalExpensesId = 0;
+  int medicalInsurancePremiumId = 0;
+  int localEducationSelfId = 0;
+  int localEducationChildrenId = 0;
+  int housingLoanInterestId = 0;
+  int pensionContributionId = 0;
+  int purchaseSharedDebentureTreasuryId = 0;
+  int bondsTreasuryBillsId = 0;
+  // int solarInstallationCostId = 0;
+  int donationToApprovedCharityId = 0;
+  int installmentPaymentId = 0;
+  int donationToGovernmentId = 0;
+  int quarterId = 0;
+  int professionalServiceId = 0;
+  int royaltyId = 0;
+  int aitWhtId = 0;
+
+  int grossSalaryRadioButtonItem = 0;
+  int profitsFromBusinessRadioButtonItem = 0;
+  int interestIncomeRadioButtonItem = 0;
+  int dividendIncomeRadioButtonItem = 0;
+  int rentIncomeRadioButtonItem = 0;
+  int otherIncomeRadioButtonItem = 0;
+  int healthMedicalExpensesRadioButtonItem = 0;
+  int medicalInsurancePremiumRadioButtonItem = 0;
+  int localEducationSelfRadioButtonItem = 0;
+  int localEducationChildrenRadioButtonItem = 0;
+  int housingLoanInterestRadioButtonItem = 0;
+  int pensionContributionRadioButtonItem = 0;
+  int purchaseSharedDebentureTreasuryRadioButtonItem = 0;
+  int bondsTreasuryBillsRadioButtonItem = 0;
+  //  int solarInstallationCostRadioButtonItem = 0;
+  int donationToApprovedCharityRadioButtonItem = 0;
+  int installmentPaymentRadioButtonItem = 0;
+  int donationToGovernmentRadioButtonItem = 0;
+  int quarter = 0;
+
+  int professionalServiceRadioButtonItem = 0;
+  int royaltyRadioButtonItem = 0;
+  int aitWhtRadioButtonItem = 0;
+
+  late TextEditingController grossSalary,
+      profitsFromBusiness,
+      interestIncome,
+      dividendIncome,
+      rentIncome,
+      otherIncome,
+      healthMedicalExpenses,
+      medicalInsurancePremium,
+      localEducationSelf,
+      localEducationChildren,
+      housingLoanInterest,
+      pensionContribution,
+      purchaseSharedDebentureTreasury,
+      bondsTreasuryBills,
+      solarInstallationCost,
+      donationToApprovedCharity,
+      donationToGovernment,
+      installmentPayment,
+      professionalServices,
+      royalty,
+      aitWht,
+      name,
+      phone,
+      email;
+
+  @override
+  void initState() {
+    super.initState();
+    grossSalary = TextEditingController();
+    profitsFromBusiness = TextEditingController();
+    interestIncome = TextEditingController();
+    dividendIncome = TextEditingController();
+    rentIncome = TextEditingController();
+    otherIncome = TextEditingController();
+    healthMedicalExpenses = TextEditingController();
+    medicalInsurancePremium = TextEditingController();
+    localEducationSelf = TextEditingController();
+    localEducationChildren = TextEditingController();
+    housingLoanInterest = TextEditingController();
+    pensionContribution = TextEditingController();
+    purchaseSharedDebentureTreasury = TextEditingController();
+    bondsTreasuryBills = TextEditingController();
+    solarInstallationCost = TextEditingController();
+    donationToApprovedCharity = TextEditingController();
+    donationToGovernment = TextEditingController();
+    installmentPayment = TextEditingController();
+    professionalServices = TextEditingController();
+    royalty = TextEditingController();
+    aitWht = TextEditingController();
+    name = TextEditingController();
+    phone = TextEditingController();
+    email = TextEditingController();
+  }
+
+
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -201,18 +308,26 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
                     childText:'Balance Tax Payable/(Refunds',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
-
-
-
-
-
-
-
-
               ],
             ),
+          ),
+          //2nd Row End
+
+          Container(
+            color: Colors.redAccent,
+            width: textFContWidth(context),
+            child: Column(
+              children: [
+                BlankContainer(),
+
+                TexfeildContainer(controller: grossSalary, hintText: 'amount',)
+              ],
+
+            ),
+
           )
+
+
 
         ],
       ),

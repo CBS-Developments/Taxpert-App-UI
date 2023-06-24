@@ -9,8 +9,8 @@ class BlankContainer extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(TextContMargin(context)),
       color: Colors.white,
-      width: TextContWidth(context),
-      height: TextContHeight(context),
+      width: textFContWidth(context),
+      height: BlankHeight(context),
     );
   }
 }

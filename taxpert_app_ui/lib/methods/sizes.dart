@@ -68,3 +68,15 @@ double TextContWidth(BuildContext context) {
 double TextContMargin(BuildContext context) {
   return (getPageWidth(context) * 0.005) ;
 }
+
+double BlankHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.03) ;
+}
+
+double textContHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.05) ;
+}
+
+double textFContWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.18);
+}

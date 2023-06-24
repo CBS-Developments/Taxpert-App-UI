@@ -10,16 +10,16 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-   const MyApp({super.key});
+  const MyApp({super.key});
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return MaterialApp(
       // home:  MyHomePage(),
       debugShowCheckedModeBanner: false,
       home: ResponsiveLayout(
-        mobileBody:  const MobileScaffold(),
+        mobileBody: const MobileScaffold(),
         tabletBody: const TabletScaffold(),
         desktopBody: const DesktopScaffold(),
       ),
@@ -29,17 +29,16 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-   const MyHomePage({super.key,});
-
-
+  const MyHomePage({
+    super.key,
+  });
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
-int grossSalaryId = 0;
+  int grossSalaryId = 0;
   int profitsFromBusinessId = 0;
   int interestIncomeId = 0;
   int dividendIncomeId = 0;
@@ -111,7 +110,7 @@ int grossSalaryId = 0;
       phone,
       email;
 
-@override
+  @override
   void initState() {
     super.initState();
     grossSalary = TextEditingController();
@@ -138,10 +137,9 @@ int grossSalaryId = 0;
     name = TextEditingController();
     phone = TextEditingController();
     email = TextEditingController();
-
   }
 
- @override
+  @override
   Widget build(BuildContext context) {
     double sizeHeight = MediaQuery.of(context).size.height;
     double sizeWidth = MediaQuery.of(context).size.width;
@@ -198,9 +196,7 @@ int grossSalaryId = 0;
                             children: [
                               MaterialButton(
                                 color: Colors.green,
-                                onPressed: () {
-                              
-                                },
+                                onPressed: () {},
                                 child: Text(
                                   "Login",
                                   style: TextStyle(
@@ -377,8 +373,9 @@ int grossSalaryId = 0;
                                 width: MediaQuery.of(context).size.width,
                                 child: TextField(
                                   textAlign: TextAlign.right,
-                                  keyboardType: const TextInputType.numberWithOptions(
-                                      decimal: true, signed: false),
+                                  keyboardType:
+                                      const TextInputType.numberWithOptions(
+                                          decimal: true, signed: false),
                                   inputFormatters: [
                                     ThousandsFormatter(allowFraction: true),
                                   ],
@@ -499,8 +496,9 @@ int grossSalaryId = 0;
                                 width: MediaQuery.of(context).size.width,
                                 child: TextField(
                                   textAlign: TextAlign.right,
-                                  keyboardType: const TextInputType.numberWithOptions(
-                                      decimal: true, signed: false),
+                                  keyboardType:
+                                      const TextInputType.numberWithOptions(
+                                          decimal: true, signed: false),
                                   inputFormatters: [
                                     ThousandsFormatter(allowFraction: true),
                                   ],
@@ -621,8 +619,9 @@ int grossSalaryId = 0;
                                 width: MediaQuery.of(context).size.width,
                                 child: TextField(
                                   textAlign: TextAlign.right,
-                                  keyboardType: const TextInputType.numberWithOptions(
-                                      decimal: true, signed: false),
+                                  keyboardType:
+                                      const TextInputType.numberWithOptions(
+                                          decimal: true, signed: false),
                                   inputFormatters: [
                                     ThousandsFormatter(allowFraction: true),
                                   ],
@@ -743,8 +742,9 @@ int grossSalaryId = 0;
                                 width: MediaQuery.of(context).size.width,
                                 child: TextField(
                                   textAlign: TextAlign.right,
-                                  keyboardType: const TextInputType.numberWithOptions(
-                                      decimal: true, signed: false),
+                                  keyboardType:
+                                      const TextInputType.numberWithOptions(
+                                          decimal: true, signed: false),
                                   inputFormatters: [
                                     ThousandsFormatter(allowFraction: true),
                                   ],
@@ -865,8 +865,9 @@ int grossSalaryId = 0;
                                 width: MediaQuery.of(context).size.width,
                                 child: TextField(
                                   textAlign: TextAlign.right,
-                                  keyboardType: const TextInputType.numberWithOptions(
-                                      decimal: true, signed: false),
+                                  keyboardType:
+                                      const TextInputType.numberWithOptions(
+                                          decimal: true, signed: false),
                                   inputFormatters: [
                                     ThousandsFormatter(allowFraction: true),
                                   ],
@@ -989,8 +990,9 @@ int grossSalaryId = 0;
                                 width: MediaQuery.of(context).size.width,
                                 child: TextField(
                                   textAlign: TextAlign.right,
-                                  keyboardType: const TextInputType.numberWithOptions(
-                                      decimal: true, signed: false),
+                                  keyboardType:
+                                      const TextInputType.numberWithOptions(
+                                          decimal: true, signed: false),
                                   inputFormatters: [
                                     ThousandsFormatter(allowFraction: true),
                                   ],
@@ -1111,8 +1113,9 @@ int grossSalaryId = 0;
                                 width: MediaQuery.of(context).size.width,
                                 child: TextField(
                                   textAlign: TextAlign.right,
-                                  keyboardType: const TextInputType.numberWithOptions(
-                                      decimal: true, signed: false),
+                                  keyboardType:
+                                      const TextInputType.numberWithOptions(
+                                          decimal: true, signed: false),
                                   inputFormatters: [
                                     ThousandsFormatter(allowFraction: true),
                                   ],
@@ -1233,8 +1236,9 @@ int grossSalaryId = 0;
                                 width: MediaQuery.of(context).size.width,
                                 child: TextField(
                                   textAlign: TextAlign.right,
-                                  keyboardType: const TextInputType.numberWithOptions(
-                                      decimal: true, signed: false),
+                                  keyboardType:
+                                      const TextInputType.numberWithOptions(
+                                          decimal: true, signed: false),
                                   inputFormatters: [
                                     ThousandsFormatter(allowFraction: true),
                                   ],
@@ -1416,8 +1420,9 @@ int grossSalaryId = 0;
                                 width: MediaQuery.of(context).size.width,
                                 child: TextField(
                                   textAlign: TextAlign.right,
-                                  keyboardType: const TextInputType.numberWithOptions(
-                                      decimal: true, signed: false),
+                                  keyboardType:
+                                      const TextInputType.numberWithOptions(
+                                          decimal: true, signed: false),
                                   inputFormatters: [
                                     ThousandsFormatter(allowFraction: true),
                                   ],
@@ -1541,8 +1546,9 @@ int grossSalaryId = 0;
                                 width: MediaQuery.of(context).size.width,
                                 child: TextField(
                                   textAlign: TextAlign.right,
-                                  keyboardType: const TextInputType.numberWithOptions(
-                                      decimal: true, signed: false),
+                                  keyboardType:
+                                      const TextInputType.numberWithOptions(
+                                          decimal: true, signed: false),
                                   inputFormatters: [
                                     ThousandsFormatter(allowFraction: true),
                                   ],
@@ -1737,8 +1743,9 @@ int grossSalaryId = 0;
                                 width: MediaQuery.of(context).size.width,
                                 child: TextField(
                                   textAlign: TextAlign.right,
-                                  keyboardType: const TextInputType.numberWithOptions(
-                                      decimal: true, signed: false),
+                                  keyboardType:
+                                      const TextInputType.numberWithOptions(
+                                          decimal: true, signed: false),
                                   inputFormatters: [
                                     ThousandsFormatter(allowFraction: true),
                                   ],
@@ -1837,7 +1844,6 @@ int grossSalaryId = 0;
                                   child: TextButton(
                                     onPressed: () {
                                       // if (quarterId != 0) {
-                                    
                                     },
                                     child: Text(
                                       "Click here to get the computation",
@@ -1965,7 +1971,7 @@ int grossSalaryId = 0;
                       ),
                     ),
                     SizedBox(height: sizeHeight * 0.005),
-                  Expanded(
+                    Expanded(
                       flex: 1,
                       child: Container(
                         height: MediaQuery.of(context).size.height,
@@ -2393,10 +2399,3 @@ int grossSalaryId = 0;
     );
   }
 }
-
-
-
-
-
-
-
