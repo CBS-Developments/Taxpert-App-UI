@@ -336,6 +336,65 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
 
                 TexfeildContainer(controller: otherIncome, hintText: 'amount',),
 
+                SizedBox(
+                  height: MeSizeBoxHeight(context),
+                ),
+
+                BlankContainer(),
+
+                TexfeildContainer(controller: donationToApprovedCharity, hintText: 'amount',),
+
+                TexfeildContainer(controller: donationToGovernment, hintText: 'amount',),
+
+                SizedBox(
+                  height: LaSizeBoxHeight(context),
+                ),
+
+                BlankContainer(),
+
+                TexfeildContainer(controller: installmentPayment, hintText: 'amount',),
+
+                SizedBox(
+                  height: MeSizeBoxHeight(context),
+                ),
+
+                BlankContainer(),
+
+                SizedBox(
+                  height: MeSizeBoxHeight(context),
+                ),
+
+                TextContainer(
+                    childText:'Quarter',
+                    fontSize: getFontMe(context),
+                    textColor: Colors.black),
+
+                TextContainer(
+                    childText:'',
+                    fontSize: getFontMe(context),
+                    textColor: Colors.black),
+
+                TextContainer(
+                    childText:'',
+                    fontSize: getFontMe(context),
+                    textColor: Colors.black),
+
+                TextContainer(
+                    childText:'',
+                    fontSize: getFontMe(context),
+                    textColor: Colors.black),
+
+                TextContainer(
+                    childText:'',
+                    fontSize: getFontMe(context),
+                    textColor: Colors.black),
+
+                TextContainer(
+                    childText:'',
+                    fontSize: getFontMe(context),
+                    textColor: Colors.black),
+
+
               ],
 
             ),
