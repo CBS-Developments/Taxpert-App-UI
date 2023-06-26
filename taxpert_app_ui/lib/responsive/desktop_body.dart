@@ -182,7 +182,7 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
 
 
           Container(
-            color: Colors.white,
+            color: Colors.redAccent,
             width: TextContWidth(context),
             child: Column(
               children: [
@@ -320,7 +320,22 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
               children: [
                 BlankContainer(),
 
-                TexfeildContainer(controller: grossSalary, hintText: 'amount',)
+                TexfeildContainer(controller: grossSalary, hintText: 'amount',),
+
+                TexfeildContainer(controller: profitsFromBusiness, hintText: 'amount',),
+
+                TexfeildContainer(controller: interestIncome, hintText: 'amount',),
+
+                TexfeildContainer(controller: dividendIncome, hintText: 'amount',),
+
+                TexfeildContainer(controller: rentIncome, hintText: 'amount',),
+
+                TexfeildContainer(controller: professionalServices, hintText: 'amount',),
+
+                TexfeildContainer(controller: royalty, hintText: 'amount',),
+
+                TexfeildContainer(controller: otherIncome, hintText: 'amount',),
+
               ],
 
             ),

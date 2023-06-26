@@ -15,15 +15,17 @@ class TexfeildContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.all(TextContMargin(context)),
+      padding: EdgeInsets.all(TextFContMargin(context)),
       color: Colors.white,
       width: textFContWidth(context),
       height: TextContHeight(context),
       child: TextField(
         controller: controller,
+        textAlignVertical: TextAlignVertical.bottom,
         textAlign: TextAlign.right,
+        maxLines: 1,
         style: TextStyle(
-          fontSize: getFontNormal(context),
+          fontSize: getFontMe(context),
         ),
         keyboardType:
             TextInputType.numberWithOptions(decimal: true, signed: false),
@@ -40,7 +42,7 @@ class TexfeildContainer extends StatelessWidget {
             fillColor: Colors.white,
             filled: true,
             hintText: hintText,
-            hintStyle: TextStyle(color: Colors.grey[500],fontSize: getFontNormal(context),)),
+            hintStyle: TextStyle(color: Colors.grey[500],fontSize: getFontMe(context),)),
       ),
     );
   }
