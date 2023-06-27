@@ -90,7 +90,7 @@ double buttonContWidth(BuildContext context) {
 }
 
 double secTextHeight(BuildContext context) {
-  return (getPageHeight(context) * 0.044) ;
+  return (getPageHeight(context) * 0.045) ;
 }
 
 double secTextWidth(BuildContext context) {

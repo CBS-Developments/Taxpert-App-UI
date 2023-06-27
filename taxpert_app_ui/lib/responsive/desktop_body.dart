@@ -5,6 +5,7 @@ import 'package:taxpert_app_ui/methods/sec_textfeild_container.dart';
 import 'package:taxpert_app_ui/methods/sizes.dart';
 import 'package:taxpert_app_ui/methods/text_container.dart';
 
+import '../methods/redio_container.dart';
 import '../methods/textfeild_container.dart';
 
 class DesktopScaffold extends StatefulWidget {
@@ -15,6 +16,7 @@ class DesktopScaffold extends StatefulWidget {
 }
 
 class _DesktopScaffoldState extends State<DesktopScaffold> {
+  int test=0;
   int grossSalaryId = 0;
   int profitsFromBusinessId = 0;
   int interestIncomeId = 0;
@@ -408,7 +410,73 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
                 SecTextFeildContainer(
                     childText: 'Monthly',
                     fontSize: getFontMe(context),
-                    textColor: Colors.black)
+                    textColor: Colors.black),
+
+                RedioContainer(
+                  groupValue: grossSalaryId,
+                  onChanged: (val) {
+                    grossSalaryRadioButtonItem = 12;
+                    grossSalaryId = 1;
+                  }, value: 1,),
+                
+                RedioContainer(
+                    groupValue:profitsFromBusinessId,
+                    onChanged: (val){
+                      profitsFromBusinessRadioButtonItem = 12;
+                    profitsFromBusinessId = 4;},
+                    value: 4),
+
+                RedioContainer(
+                    groupValue:interestIncomeId,
+                    onChanged: (val){
+                      interestIncomeRadioButtonItem = 12;
+                      interestIncomeId = 7;},
+                    value: 7),
+
+                RedioContainer(
+                    groupValue:test,
+                    onChanged: (val){},
+                    value: test),
+
+                RedioContainer(
+                    groupValue:test,
+                    onChanged: (val){},
+                    value: test),
+
+                RedioContainer(
+                    groupValue:test,
+                    onChanged: (val){},
+                    value: test),
+
+                RedioContainer(
+                    groupValue:test,
+                    onChanged: (val){},
+                    value: test),
+
+                RedioContainer(
+                    groupValue:test,
+                    onChanged: (val){},
+                    value: test),
+
+                SizedBox(
+                  height: MeSizeBoxHeight(context),
+                ),
+
+                SecTextFeildContainer(
+                    childText: '',
+                    fontSize: getFontMe(context),
+                    textColor: Colors.black),
+
+                RedioContainer(
+                    groupValue:test,
+                    onChanged: (val){},
+                    value: test),
+
+                RedioContainer(
+                    groupValue:test,
+                    onChanged: (val){},
+                    value: test),
+
               ],
             ),
           ),
@@ -422,7 +490,30 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
                 SecTextFeildContainer(
                     childText: 'Quarterly',
                     fontSize: getFontMe(context),
-                    textColor: Colors.black)
+                    textColor: Colors.black),
+
+                RedioContainer(
+                  groupValue: grossSalaryId,
+                  onChanged: (val) {
+                    grossSalaryRadioButtonItem = 4;
+                    grossSalaryId = 2;
+                  }, value: 2,),
+
+                RedioContainer(
+                    groupValue:profitsFromBusinessId,
+                    onChanged: (val){
+                      profitsFromBusinessRadioButtonItem = 4;
+                      profitsFromBusinessId = 5;},
+                    value: 5),
+
+                RedioContainer(
+                    groupValue:interestIncomeId,
+                    onChanged: (val){
+                      interestIncomeRadioButtonItem = 12;
+                      interestIncomeId = 8;},
+                    value: 8),
+
+
               ],
             ),
           ),
@@ -437,7 +528,30 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
                 SecTextFeildContainer(
                     childText: 'Annual',
                     fontSize: getFontMe(context),
-                    textColor: Colors.black)
+                    textColor: Colors.black),
+
+                RedioContainer(
+                  groupValue: grossSalaryId,
+                  onChanged: (val) {
+                    grossSalaryRadioButtonItem = 1;
+                    grossSalaryId = 3;
+                  }, value: 3,),
+
+                RedioContainer(
+                    groupValue:profitsFromBusinessId,
+                    onChanged: (val){
+                      profitsFromBusinessRadioButtonItem = 1;
+                      profitsFromBusinessId = 6;},
+                    value: 6),
+
+                RedioContainer(
+                    groupValue:interestIncomeId,
+                    onChanged: (val){
+                      interestIncomeRadioButtonItem = 1;
+                      interestIncomeId = 9;},
+                    value: 9)
+
+
               ],
             ),
           ),

@@ -3,8 +3,9 @@ import 'package:taxpert_app_ui/methods/sizes.dart';
 
 class RedioContainer extends StatelessWidget {
   final int groupValue;
+  final int value;
   final ValueChanged<int?> onChanged;
-  const RedioContainer({Key? key, required this.groupValue, required this.onChanged}) : super(key: key);
+  const RedioContainer({Key? key, required this.groupValue, required this.onChanged, required this.value}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +17,7 @@ class RedioContainer extends StatelessWidget {
         alignment: Alignment.bottomCenter,
         child: Radio(
           activeColor: Colors.green,
-          value: 1,
+          value: value,
           groupValue: groupValue,
           onChanged: onChanged,
         ),
