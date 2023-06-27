@@ -477,6 +477,15 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
                     onChanged: (val){},
                     value: test),
 
+                SizedBox(
+                  height: LaSizeBoxHeight(context),
+                ),
+
+                SecTextFeildContainer(
+                    childText: '',
+                    fontSize: getFontMe(context),
+                    textColor: Colors.black),
+
               ],
             ),
           ),
@@ -512,6 +521,59 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
                       interestIncomeRadioButtonItem = 12;
                       interestIncomeId = 8;},
                     value: 8),
+
+                RedioContainer(
+                    groupValue:test,
+                    onChanged: (val){},
+                    value: test),
+
+                RedioContainer(
+                    groupValue:test,
+                    onChanged: (val){},
+                    value: test),
+
+                RedioContainer(
+                    groupValue:test,
+                    onChanged: (val){},
+                    value: test),
+
+                RedioContainer(
+                    groupValue:test,
+                    onChanged: (val){},
+                    value: test),
+
+                RedioContainer(
+                    groupValue:test,
+                    onChanged: (val){},
+                    value: test),
+
+                SizedBox(
+                  height: MeSizeBoxHeight(context),
+                ),
+
+                SecTextFeildContainer(
+                    childText: '',
+                    fontSize: getFontMe(context),
+                    textColor: Colors.black),
+
+                RedioContainer(
+                    groupValue:test,
+                    onChanged: (val){},
+                    value: test),
+
+                RedioContainer(
+                    groupValue:test,
+                    onChanged: (val){},
+                    value: test),
+
+                SizedBox(
+                  height: LaSizeBoxHeight(context),
+                ),
+
+                SecTextFeildContainer(
+                    childText: '',
+                    fontSize: getFontMe(context),
+                    textColor: Colors.black),
 
 
               ],
@@ -549,7 +611,60 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
                     onChanged: (val){
                       interestIncomeRadioButtonItem = 1;
                       interestIncomeId = 9;},
-                    value: 9)
+                    value: 9),
+
+                RedioContainer(
+                    groupValue:test,
+                    onChanged: (val){},
+                    value: test),
+
+                RedioContainer(
+                    groupValue:test,
+                    onChanged: (val){},
+                    value: test),
+
+                RedioContainer(
+                    groupValue:test,
+                    onChanged: (val){},
+                    value: test),
+
+                RedioContainer(
+                    groupValue:test,
+                    onChanged: (val){},
+                    value: test),
+
+                RedioContainer(
+                    groupValue:test,
+                    onChanged: (val){},
+                    value: test),
+
+                SizedBox(
+                  height: MeSizeBoxHeight(context),
+                ),
+
+                SecTextFeildContainer(
+                    childText: '',
+                    fontSize: getFontMe(context),
+                    textColor: Colors.black),
+
+                RedioContainer(
+                    groupValue:test,
+                    onChanged: (val){},
+                    value: test),
+
+                RedioContainer(
+                    groupValue:test,
+                    onChanged: (val){},
+                    value: test),
+
+                SizedBox(
+                  height: LaSizeBoxHeight(context),
+                ),
+
+                SecTextFeildContainer(
+                    childText: '',
+                    fontSize: getFontMe(context),
+                    textColor: Colors.black),
 
 
               ],
