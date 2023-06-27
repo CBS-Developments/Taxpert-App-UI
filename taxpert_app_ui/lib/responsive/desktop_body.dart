@@ -16,7 +16,7 @@ class DesktopScaffold extends StatefulWidget {
 }
 
 class _DesktopScaffoldState extends State<DesktopScaffold> {
-  int test=0;
+  int test = 0;
   int grossSalaryId = 0;
   int profitsFromBusinessId = 0;
   int interestIncomeId = 0;
@@ -118,9 +118,6 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
     email = TextEditingController();
   }
 
-
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -183,132 +180,108 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
 
           // Left Menu End
 
-
           Container(
             color: Colors.white,
             width: TextContWidth(context),
             child: Column(
               children: [
                 TextContainer(
-                    childText:'Gains & Profits',
+                    childText: 'Gains & Profits',
                     fontSize: getFontLarge(context),
                     textColor: Colors.green),
-
                 TextContainer(
-                    childText:'Gross Salary',
+                    childText: 'Gross Salary',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 TextContainer(
-                    childText:'Profits from Business',
+                    childText: 'Profits from Business',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 TextContainer(
-                    childText:'Interest Income',
+                    childText: 'Interest Income',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 TextContainer(
-                    childText:'Dividend Income',
+                    childText: 'Dividend Income',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 TextContainer(
-                    childText:'Rent Income',
+                    childText: 'Rent Income',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 TextContainer(
-                    childText:'Professional Services/Service Fees',
+                    childText: 'Professional Services/Service Fees',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 TextContainer(
-                    childText:'Royalty',
+                    childText: 'Royalty',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 TextContainer(
-                    childText:'Other Income',
+                    childText: 'Other Income',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 SizedBox(
                   height: MeSizeBoxHeight(context),
                 ),
-
                 TextContainer(
-                    childText:'Qualifying Payments',
+                    childText: 'Qualifying Payments',
                     fontSize: getFontLarge(context),
                     textColor: Colors.green),
-
                 TextContainer(
-                    childText:'Donation to approved charity',
+                    childText: 'Donation to approved charity',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 TextContainer(
-                    childText:'Donation to Government',
+                    childText: 'Donation to Government',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 SizedBox(
                   height: LaSizeBoxHeight(context),
                 ),
-
                 TextContainer(
-                    childText:'Tax Credits',
+                    childText: 'Tax Credits',
                     fontSize: getFontLarge(context),
                     textColor: Colors.green),
-
                 TextContainer(
-                    childText:'Installment Payment',
+                    childText: 'Installment Payment',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 SizedBox(
                   height: MeSizeBoxHeight(context),
                 ),
-
-                GestureDetector(onTap: (){},
+                GestureDetector(
+                  onTap: () {},
                   child: TextContainer(
-                      childText:'Click here to get computation',
+                      childText: 'Click here to get computation',
                       fontSize: getFontLarge(context),
                       textColor: Colors.blue),
                 ),
-
                 SizedBox(
                   height: MeSizeBoxHeight(context),
                 ),
-
                 TextContainer(
-                    childText:'Tax Summary:',
+                    childText: 'Tax Summary:',
                     fontSize: getFontLarge(context),
                     textColor: Colors.green),
-
                 TextContainer(
-                    childText:'Total Gains and Profits',
+                    childText: 'Total Gains and Profits',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 TextContainer(
-                    childText:'Tax Payable',
+                    childText: 'Tax Payable',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 TextContainer(
-                    childText:'Tax Deducted at Source (TDS)',
+                    childText: 'Tax Deducted at Source (TDS)',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 TextContainer(
-                    childText:'Self Assessment Payment',
+                    childText: 'Self Assessment Payment',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 TextContainer(
-                    childText:'Balance Tax Payable/(Refunds',
+                    childText: 'Balance Tax Payable/(Refunds',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
               ],
@@ -322,82 +295,90 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
             child: Column(
               children: [
                 BlankContainer(),
-
-                TexfeildContainer(controller: grossSalary, hintText: 'amount',),
-
-                TexfeildContainer(controller: profitsFromBusiness, hintText: 'amount',),
-
-                TexfeildContainer(controller: interestIncome, hintText: 'amount',),
-
-                TexfeildContainer(controller: dividendIncome, hintText: 'amount',),
-
-                TexfeildContainer(controller: rentIncome, hintText: 'amount',),
-
-                TexfeildContainer(controller: professionalServices, hintText: 'amount',),
-
-                TexfeildContainer(controller: royalty, hintText: 'amount',),
-
-                TexfeildContainer(controller: otherIncome, hintText: 'amount',),
-
+                TexfeildContainer(
+                  controller: grossSalary,
+                  hintText: 'amount',
+                ),
+                TexfeildContainer(
+                  controller: profitsFromBusiness,
+                  hintText: 'amount',
+                ),
+                TexfeildContainer(
+                  controller: interestIncome,
+                  hintText: 'amount',
+                ),
+                TexfeildContainer(
+                  controller: dividendIncome,
+                  hintText: 'amount',
+                ),
+                TexfeildContainer(
+                  controller: rentIncome,
+                  hintText: 'amount',
+                ),
+                TexfeildContainer(
+                  controller: professionalServices,
+                  hintText: 'amount',
+                ),
+                TexfeildContainer(
+                  controller: royalty,
+                  hintText: 'amount',
+                ),
+                TexfeildContainer(
+                  controller: otherIncome,
+                  hintText: 'amount',
+                ),
                 SizedBox(
                   height: MeSizeBoxHeight(context),
                 ),
-
                 BlankContainer(),
-
-                TexfeildContainer(controller: donationToApprovedCharity, hintText: 'amount',),
-
-                TexfeildContainer(controller: donationToGovernment, hintText: 'amount',),
-
+                TexfeildContainer(
+                  controller: donationToApprovedCharity,
+                  hintText: 'amount',
+                ),
+                TexfeildContainer(
+                  controller: donationToGovernment,
+                  hintText: 'amount',
+                ),
                 SizedBox(
                   height: LaSizeBoxHeight(context),
                 ),
-
                 BlankContainer(),
-
-                TexfeildContainer(controller: installmentPayment, hintText: 'amount',),
-
+                TexfeildContainer(
+                  controller: installmentPayment,
+                  hintText: 'amount',
+                ),
                 SizedBox(
                   height: MeSizeBoxHeight(context),
                 ),
-
                 BlankContainer(),
-
                 SizedBox(
                   height: MeSizeBoxHeight(context),
                 ),
-
                 TextContainer(
-                    childText:'Quarter',
+                    childText: 'Quarter',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 TextContainer(
-                    childText:'',
+                    childText: '',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 TextContainer(
-                    childText:'',
+                    childText: '',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 TextContainer(
-                    childText:'',
+                    childText: '',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 TextContainer(
-                    childText:'',
+                    childText: '',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 TextContainer(
-                    childText:'',
+                    childText: '',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
               ],
-
             ),
           ),
 
@@ -411,129 +392,94 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
                     childText: 'Monthly',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 RedioContainer(
                   groupValue: grossSalaryId,
                   onChanged: (val) {
                     grossSalaryRadioButtonItem = 12;
                     grossSalaryId = 1;
-                  }, value: 1,),
-                
+                  },
+                  value: 1,
+                ),
                 RedioContainer(
-                    groupValue:profitsFromBusinessId,
-                    onChanged: (val){
+                    groupValue: profitsFromBusinessId,
+                    onChanged: (val) {
                       profitsFromBusinessRadioButtonItem = 12;
-                    profitsFromBusinessId = 4;},
+                      profitsFromBusinessId = 4;
+                    },
                     value: 4),
-
                 RedioContainer(
-                    groupValue:interestIncomeId,
-                    onChanged: (val){
+                    groupValue: interestIncomeId,
+                    onChanged: (val) {
                       interestIncomeRadioButtonItem = 12;
-                      interestIncomeId = 7;},
+                      interestIncomeId = 7;
+                    },
                     value: 7),
-
                 RedioContainer(
-                    groupValue:test,
-                    onChanged: (val){},
-                    value: test),
-
+                    groupValue: test, onChanged: (val) {}, value: test),
                 RedioContainer(
-                    groupValue:test,
-                    onChanged: (val){},
-                    value: test),
-
+                    groupValue: test, onChanged: (val) {}, value: test),
                 RedioContainer(
-                    groupValue:test,
-                    onChanged: (val){},
-                    value: test),
-
+                    groupValue: test, onChanged: (val) {}, value: test),
                 RedioContainer(
-                    groupValue:test,
-                    onChanged: (val){},
-                    value: test),
-
+                    groupValue: test, onChanged: (val) {}, value: test),
                 RedioContainer(
-                    groupValue:test,
-                    onChanged: (val){},
-                    value: test),
-
+                    groupValue: test, onChanged: (val) {}, value: test),
                 SizedBox(
                   height: MeSizeBoxHeight(context),
                 ),
-
                 SecTextFeildContainer(
                     childText: '',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 RedioContainer(
-                    groupValue:test,
-                    onChanged: (val){},
-                    value: test),
-
+                    groupValue: test, onChanged: (val) {}, value: test),
                 RedioContainer(
-                    groupValue:test,
-                    onChanged: (val){},
-                    value: test),
-
+                    groupValue: test, onChanged: (val) {}, value: test),
                 SizedBox(
                   height: LaSizeBoxHeight(context),
                 ),
-
                 SecTextFeildContainer(
                     childText: '',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 SecTextFeildContainer(
                     childText: '',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 SizedBox(
                   height: MeSizeBoxHeight(context),
                 ),
-
                 SecTextFeildContainer(
                     childText: '',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 SizedBox(
                   height: MeSizeBoxHeight(context),
                 ),
-
                 SecTextFeildContainer(
                     childText: 'Annual',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 SecTextFeildContainer(
                     childText: '',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 SecTextFeildContainer(
                     childText: '',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 SecTextFeildContainer(
                     childText: '',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 SecTextFeildContainer(
                     childText: '',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 SecTextFeildContainer(
                     childText: '',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
               ],
             ),
           ),
@@ -548,104 +494,71 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
                     childText: 'Quarterly',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 RedioContainer(
                   groupValue: grossSalaryId,
                   onChanged: (val) {
                     grossSalaryRadioButtonItem = 4;
                     grossSalaryId = 2;
-                  }, value: 2,),
-
+                  },
+                  value: 2,
+                ),
                 RedioContainer(
-                    groupValue:profitsFromBusinessId,
-                    onChanged: (val){
+                    groupValue: profitsFromBusinessId,
+                    onChanged: (val) {
                       profitsFromBusinessRadioButtonItem = 4;
-                      profitsFromBusinessId = 5;},
+                      profitsFromBusinessId = 5;
+                    },
                     value: 5),
-
                 RedioContainer(
-                    groupValue:interestIncomeId,
-                    onChanged: (val){
+                    groupValue: interestIncomeId,
+                    onChanged: (val) {
                       interestIncomeRadioButtonItem = 12;
-                      interestIncomeId = 8;},
+                      interestIncomeId = 8;
+                    },
                     value: 8),
-
                 RedioContainer(
-                    groupValue:test,
-                    onChanged: (val){},
-                    value: test),
-
+                    groupValue: test, onChanged: (val) {}, value: test),
                 RedioContainer(
-                    groupValue:test,
-                    onChanged: (val){},
-                    value: test),
-
+                    groupValue: test, onChanged: (val) {}, value: test),
                 RedioContainer(
-                    groupValue:test,
-                    onChanged: (val){},
-                    value: test),
-
+                    groupValue: test, onChanged: (val) {}, value: test),
                 RedioContainer(
-                    groupValue:test,
-                    onChanged: (val){},
-                    value: test),
-
+                    groupValue: test, onChanged: (val) {}, value: test),
                 RedioContainer(
-                    groupValue:test,
-                    onChanged: (val){},
-                    value: test),
-
+                    groupValue: test, onChanged: (val) {}, value: test),
                 SizedBox(
                   height: MeSizeBoxHeight(context),
                 ),
-
                 SecTextFeildContainer(
                     childText: '',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 RedioContainer(
-                    groupValue:test,
-                    onChanged: (val){},
-                    value: test),
-
+                    groupValue: test, onChanged: (val) {}, value: test),
                 RedioContainer(
-                    groupValue:test,
-                    onChanged: (val){},
-                    value: test),
-
+                    groupValue: test, onChanged: (val) {}, value: test),
                 SizedBox(
                   height: LaSizeBoxHeight(context),
                 ),
-
                 SecTextFeildContainer(
                     childText: '',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 RedioContainer(
-                    groupValue:test,
-                    onChanged: (val){},
-                    value: test),
-
+                    groupValue: test, onChanged: (val) {}, value: test),
                 SizedBox(
                   height: MeSizeBoxHeight(context),
                 ),
-
                 SecTextFeildContainer(
                     childText: '',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 SizedBox(
                   height: MeSizeBoxHeight(context),
                 ),
-
-
               ],
             ),
           ),
-
 
           //Annual Row Start
           Container(
@@ -657,106 +570,71 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
                     childText: 'Annual',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 RedioContainer(
                   groupValue: grossSalaryId,
                   onChanged: (val) {
                     grossSalaryRadioButtonItem = 1;
                     grossSalaryId = 3;
-                  }, value: 3,),
-
+                  },
+                  value: 3,
+                ),
                 RedioContainer(
-                    groupValue:profitsFromBusinessId,
-                    onChanged: (val){
+                    groupValue: profitsFromBusinessId,
+                    onChanged: (val) {
                       profitsFromBusinessRadioButtonItem = 1;
-                      profitsFromBusinessId = 6;},
+                      profitsFromBusinessId = 6;
+                    },
                     value: 6),
-
                 RedioContainer(
-                    groupValue:interestIncomeId,
-                    onChanged: (val){
+                    groupValue: interestIncomeId,
+                    onChanged: (val) {
                       interestIncomeRadioButtonItem = 1;
-                      interestIncomeId = 9;},
+                      interestIncomeId = 9;
+                    },
                     value: 9),
-
                 RedioContainer(
-                    groupValue:test,
-                    onChanged: (val){},
-                    value: test),
-
+                    groupValue: test, onChanged: (val) {}, value: test),
                 RedioContainer(
-                    groupValue:test,
-                    onChanged: (val){},
-                    value: test),
-
+                    groupValue: test, onChanged: (val) {}, value: test),
                 RedioContainer(
-                    groupValue:test,
-                    onChanged: (val){},
-                    value: test),
-
+                    groupValue: test, onChanged: (val) {}, value: test),
                 RedioContainer(
-                    groupValue:test,
-                    onChanged: (val){},
-                    value: test),
-
+                    groupValue: test, onChanged: (val) {}, value: test),
                 RedioContainer(
-                    groupValue:test,
-                    onChanged: (val){},
-                    value: test),
-
+                    groupValue: test, onChanged: (val) {}, value: test),
                 SizedBox(
                   height: MeSizeBoxHeight(context),
                 ),
-
                 SecTextFeildContainer(
                     childText: '',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 RedioContainer(
-                    groupValue:test,
-                    onChanged: (val){},
-                    value: test),
-
+                    groupValue: test, onChanged: (val) {}, value: test),
                 RedioContainer(
-                    groupValue:test,
-                    onChanged: (val){},
-                    value: test),
-
+                    groupValue: test, onChanged: (val) {}, value: test),
                 SizedBox(
                   height: LaSizeBoxHeight(context),
                 ),
-
                 SecTextFeildContainer(
                     childText: '',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 RedioContainer(
-                    groupValue:test,
-                    onChanged: (val){},
-                    value: test),
-
+                    groupValue: test, onChanged: (val) {}, value: test),
                 SizedBox(
                   height: MeSizeBoxHeight(context),
                 ),
-
                 SecTextFeildContainer(
                     childText: '',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
                 SizedBox(
                   height: MeSizeBoxHeight(context),
                 ),
-
-
               ],
             ),
           ),
-
-
-
         ],
       ),
     );
