@@ -399,6 +399,7 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
             ),
           ),
 
+          //Monthly Row Start
           Container(
             width: buttonContWidth(context),
             color: Colors.orangeAccent,
@@ -412,14 +413,33 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
             ),
           ),
 
+          //Quarterly Row Start
           Container(
             width: buttonContWidth(context),
             color: Colors.greenAccent,
+            child: Column(
+              children: [
+                SecTextFeildContainer(
+                    childText: 'Quarterly',
+                    fontSize: getFontMe(context),
+                    textColor: Colors.black)
+              ],
+            ),
           ),
 
+
+          //Annual Row Start
           Container(
             width: buttonContWidth(context),
             color: Colors.blueAccent,
+            child: Column(
+              children: [
+                SecTextFeildContainer(
+                    childText: 'Annual',
+                    fontSize: getFontMe(context),
+                    textColor: Colors.black)
+              ],
+            ),
           ),
 
 
