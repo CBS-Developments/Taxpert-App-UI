@@ -84,3 +84,16 @@ double textFContWidth(BuildContext context) {
 double TextFContMargin(BuildContext context) {
   return (getPageWidth(context) * 0.002) ;
 }
+
+double buttonContWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.12) ;
+}
+
+double secTextHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.044) ;
+}
+
+double secTextWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.12) ;
+}
+

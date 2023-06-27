@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:taxpert_app_ui/methods/blank_container.dart';
 import 'package:taxpert_app_ui/methods/my_button.dart';
+import 'package:taxpert_app_ui/methods/sec_textfeild_container.dart';
 import 'package:taxpert_app_ui/methods/sizes.dart';
 import 'package:taxpert_app_ui/methods/text_container.dart';
 
@@ -393,20 +394,38 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
                     childText:'',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
-
-
               ],
 
             ),
+          ),
 
-          )
+          Container(
+            width: buttonContWidth(context),
+            color: Colors.orangeAccent,
+            child: Column(
+              children: [
+                SecTextFeildContainer(
+                    childText: 'Monthly',
+                    fontSize: getFontMe(context),
+                    textColor: Colors.black)
+              ],
+            ),
+          ),
+
+          Container(
+            width: buttonContWidth(context),
+            color: Colors.greenAccent,
+          ),
+
+          Container(
+            width: buttonContWidth(context),
+            color: Colors.blueAccent,
+          ),
 
 
 
         ],
       ),
-
-
     );
   }
 }
