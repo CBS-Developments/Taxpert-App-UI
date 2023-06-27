@@ -16,8 +16,11 @@ class SecTextFeildContainer extends StatelessWidget {
       color: Colors.white,
       width: secTextWidth(context),
       height: secTextHeight(context),
-      child: Text(childText,
-        style: TextStyle(fontSize: fontSize ,fontWeight: FontWeight.bold,color: textColor),
+      child: Align(
+        alignment: Alignment.center,
+        child: Text(childText,
+          style: TextStyle(fontSize: fontSize ,fontWeight: FontWeight.bold,color: textColor),
+        ),
       ),
     );
   }

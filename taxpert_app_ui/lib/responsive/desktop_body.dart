@@ -185,7 +185,7 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
 
 
           Container(
-            color: Colors.redAccent,
+            color: Colors.white,
             width: TextContWidth(context),
             child: Column(
               children: [
@@ -317,7 +317,7 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
           //2nd Row End
 
           Container(
-            color: Colors.redAccent,
+            color: Colors.white,
             width: textFContWidth(context),
             child: Column(
               children: [
@@ -404,7 +404,7 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
           //Monthly Row Start
           Container(
             width: buttonContWidth(context),
-            color: Colors.orangeAccent,
+            color: Colors.white,
             child: Column(
               children: [
                 SecTextFeildContainer(
@@ -486,6 +486,54 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
 
+                SecTextFeildContainer(
+                    childText: '',
+                    fontSize: getFontMe(context),
+                    textColor: Colors.black),
+
+                SizedBox(
+                  height: MeSizeBoxHeight(context),
+                ),
+
+                SecTextFeildContainer(
+                    childText: '',
+                    fontSize: getFontMe(context),
+                    textColor: Colors.black),
+
+                SizedBox(
+                  height: MeSizeBoxHeight(context),
+                ),
+
+                SecTextFeildContainer(
+                    childText: 'Annual',
+                    fontSize: getFontMe(context),
+                    textColor: Colors.black),
+
+                SecTextFeildContainer(
+                    childText: '',
+                    fontSize: getFontMe(context),
+                    textColor: Colors.black),
+
+                SecTextFeildContainer(
+                    childText: '',
+                    fontSize: getFontMe(context),
+                    textColor: Colors.black),
+
+                SecTextFeildContainer(
+                    childText: '',
+                    fontSize: getFontMe(context),
+                    textColor: Colors.black),
+
+                SecTextFeildContainer(
+                    childText: '',
+                    fontSize: getFontMe(context),
+                    textColor: Colors.black),
+
+                SecTextFeildContainer(
+                    childText: '',
+                    fontSize: getFontMe(context),
+                    textColor: Colors.black),
+
               ],
             ),
           ),
@@ -493,7 +541,7 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
           //Quarterly Row Start
           Container(
             width: buttonContWidth(context),
-            color: Colors.greenAccent,
+            color: Colors.white,
             child: Column(
               children: [
                 SecTextFeildContainer(
@@ -575,6 +623,24 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
 
+                RedioContainer(
+                    groupValue:test,
+                    onChanged: (val){},
+                    value: test),
+
+                SizedBox(
+                  height: MeSizeBoxHeight(context),
+                ),
+
+                SecTextFeildContainer(
+                    childText: '',
+                    fontSize: getFontMe(context),
+                    textColor: Colors.black),
+
+                SizedBox(
+                  height: MeSizeBoxHeight(context),
+                ),
+
 
               ],
             ),
@@ -584,7 +650,7 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
           //Annual Row Start
           Container(
             width: buttonContWidth(context),
-            color: Colors.blueAccent,
+            color: Colors.white,
             child: Column(
               children: [
                 SecTextFeildContainer(
@@ -665,6 +731,24 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
                     childText: '',
                     fontSize: getFontMe(context),
                     textColor: Colors.black),
+
+                RedioContainer(
+                    groupValue:test,
+                    onChanged: (val){},
+                    value: test),
+
+                SizedBox(
+                  height: MeSizeBoxHeight(context),
+                ),
+
+                SecTextFeildContainer(
+                    childText: '',
+                    fontSize: getFontMe(context),
+                    textColor: Colors.black),
+
+                SizedBox(
+                  height: MeSizeBoxHeight(context),
+                ),
 
 
               ],
