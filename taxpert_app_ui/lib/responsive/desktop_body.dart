@@ -173,7 +173,11 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
                 SizedBox(
                   height: MeSizeBoxHeight(context),
                 ),
-                MyButton(onTap: () {}, childText: 'Login'),
+                MyButton(onTap: () {
+                  Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => LoginPage()),
+                );}, childText: 'Login'),
               ],
             ),
           ),
@@ -651,7 +655,32 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+      body: Row(
+        children: [
+          Container(
+            width: GContainerWidth(context),
+            color: Colors.green,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                MyButton(onTap:(){}, childText: 'Create Account'),
+
+                SizedBox(
+                  height: LaSizeBoxHeight(context),
+                ),
+
+                MyButton(onTap:(){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => DesktopScaffold()),
+                  );
+
+                }, childText: 'Tax Calculator')
+              ],
+            ),
+          )
+        ],
+      ),
     );
   }
 }
