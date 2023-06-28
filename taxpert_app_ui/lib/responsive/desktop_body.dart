@@ -181,7 +181,7 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
           // Left Menu End
 
           Container(
-            color: Colors.redAccent,
+            color: Colors.white,
             width: TextContWidth(context),
             child: Column(
               children: [
@@ -291,7 +291,7 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
           //2nd Row End
 
           Container(
-            color: Colors.redAccent,
+            color: Colors.white,
             width: textFContWidth(context),
             child: Column(
               children: [
@@ -386,7 +386,7 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
           //Monthly Row Start
           Container(
             width: buttonContWidth(context),
-            color: Colors.greenAccent,
+            color: Colors.white,
             child: Column(
               children: [
                 SecTextFeildContainer(
@@ -488,7 +488,7 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
           //Quarterly Row Start
           Container(
             width: buttonContWidth(context),
-            color: Colors.yellowAccent,
+            color: Colors.white,
             child: Column(
               children: [
                 SecTextFeildContainer(
@@ -564,7 +564,7 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
           //Annual Row Start
           Container(
             width: buttonContWidth(context),
-            color: Colors.blueAccent,
+            color: Colors.white,
             child: Column(
               children: [
                 SecTextFeildContainer(
@@ -641,3 +641,21 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
     );
   }
 }
+
+
+// Login Page Start
+
+class LoginPage extends StatelessWidget {
+  const LoginPage({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      
+    );
+  }
+}
+
+
+
+

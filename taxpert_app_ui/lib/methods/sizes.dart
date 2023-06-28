@@ -47,11 +47,11 @@ double buttonFont(BuildContext context) {
 }
 
 double MeSizeBoxHeight(BuildContext context){
-  return (MediaQuery.of(context).size.height)*0.0025;
+  return (MediaQuery.of(context).size.height)*0.01;
 }
 
 double LaSizeBoxHeight(BuildContext context){
-  return (MediaQuery.of(context).size.height)*0.0025;
+  return (MediaQuery.of(context).size.height)*0.02;
 }
 
 double ImageHeight(BuildContext context) {
