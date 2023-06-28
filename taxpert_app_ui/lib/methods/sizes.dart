@@ -17,8 +17,13 @@ double GContainerWidth(BuildContext context){
   return (MediaQuery.of(context).size.width)*0.23;
 }
 
+double underContainerWidth(BuildContext context){
+  return (MediaQuery.of(context).size.width)*0.77;
+}
+
+
 double getFontLarge(BuildContext context) {
-  return (getPageWidth(context) * 0.004) * (getPageHeight(context) * 0.004);
+  return (getPageWidth(context) * 0.0038) * (getPageHeight(context) * 0.0038);
 }
 
 double getFontMe(BuildContext context) {
@@ -42,11 +47,11 @@ double buttonFont(BuildContext context) {
 }
 
 double MeSizeBoxHeight(BuildContext context){
-  return (MediaQuery.of(context).size.height)*0.01;
+  return (MediaQuery.of(context).size.height)*0.0025;
 }
 
 double LaSizeBoxHeight(BuildContext context){
-  return (MediaQuery.of(context).size.height)*0.02;
+  return (MediaQuery.of(context).size.height)*0.0025;
 }
 
 double ImageHeight(BuildContext context) {
@@ -66,7 +71,7 @@ double TextContWidth(BuildContext context) {
 }
 
 double TextContMargin(BuildContext context) {
-  return (getPageWidth(context) * 0.005) ;
+  return (getPageWidth(context) * 0.003) ;
 }
 
 double BlankHeight(BuildContext context) {
@@ -96,4 +101,9 @@ double secTextHeight(BuildContext context) {
 double secTextWidth(BuildContext context) {
   return (getPageWidth(context) * 0.12) ;
 }
-
+//
+// Container(
+// height: BlankHeight(context),
+// width: underContainerWidth(context),
+// color: Colors.brown,
+// ),

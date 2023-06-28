@@ -181,7 +181,7 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
           // Left Menu End
 
           Container(
-            color: Colors.white,
+            color: Colors.redAccent,
             width: TextContWidth(context),
             child: Column(
               children: [
@@ -287,10 +287,11 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
               ],
             ),
           ),
+
           //2nd Row End
 
           Container(
-            color: Colors.white,
+            color: Colors.redAccent,
             width: textFContWidth(context),
             child: Column(
               children: [
@@ -385,7 +386,7 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
           //Monthly Row Start
           Container(
             width: buttonContWidth(context),
-            color: Colors.white,
+            color: Colors.greenAccent,
             child: Column(
               children: [
                 SecTextFeildContainer(
@@ -487,7 +488,7 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
           //Quarterly Row Start
           Container(
             width: buttonContWidth(context),
-            color: Colors.white,
+            color: Colors.yellowAccent,
             child: Column(
               children: [
                 SecTextFeildContainer(
@@ -563,7 +564,7 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
           //Annual Row Start
           Container(
             width: buttonContWidth(context),
-            color: Colors.white,
+            color: Colors.blueAccent,
             child: Column(
               children: [
                 SecTextFeildContainer(
