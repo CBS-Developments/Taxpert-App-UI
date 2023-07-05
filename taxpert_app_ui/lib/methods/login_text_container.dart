@@ -13,7 +13,7 @@ class LoginTextContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.all(loginTextContMargin(context)),
-      color: Colors.redAccent,
+      color: Colors.white,
       width: loginTextContWidth(context),
       height: loginTextContHeight(context),
       child: Text(childText,

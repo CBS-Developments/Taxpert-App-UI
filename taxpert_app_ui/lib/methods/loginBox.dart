@@ -11,6 +11,7 @@ class LoginBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.all(30),
       margin: EdgeInsets.symmetric(
           horizontal: getContHoriMargin(context)),
       decoration: BoxDecoration(

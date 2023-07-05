@@ -658,7 +658,9 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Row(
+      backgroundColor: Colors.white,
+      body:
+      Row(
         children: [
           Container(
             width: GContainerWidth(context),
@@ -722,7 +724,8 @@ class LoginPage extends StatelessWidget {
                             horizontal: getContHoriMargin(context)),
                         width: imageContWidth(context),
                         height: imageContHeight(context),
-                        color: Colors.yellowAccent,
+                        color: Colors.white,
+                        child: Image.asset('images/tlog.gif'),
                       ),
                       
                       LoginBox(child: Column(
@@ -734,6 +737,7 @@ class LoginPage extends StatelessWidget {
 
                           Text('User Login',
                             style: TextStyle(
+                              fontWeight: FontWeight.bold,
                               fontSize: getFontxXL(context)
                             ),
                           ),
@@ -761,8 +765,19 @@ class LoginPage extends StatelessWidget {
                               ),
 
 
+
+
+
                             ],
-                          )
+                          ),
+
+
+                          SizedBox(
+                            height: sizeBoxXLHeight(context),
+                          ),
+
+
+                          MyButton(onTap:(){}, childText: 'Login'),
 
                         ],
 
