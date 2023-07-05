@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:taxpert_app_ui/methods/blank_container.dart';
+import 'package:taxpert_app_ui/methods/loginBox.dart';
+import 'package:taxpert_app_ui/methods/login_text_container.dart';
 import 'package:taxpert_app_ui/methods/my_button.dart';
 import 'package:taxpert_app_ui/methods/sec_textfeild_container.dart';
 import 'package:taxpert_app_ui/methods/sizes.dart';
 import 'package:taxpert_app_ui/methods/text_container.dart';
 
+import '../methods/loginpage_sizes.dart';
 import '../methods/redio_container.dart';
 import '../methods/textfeild_container.dart';
 
@@ -678,7 +681,104 @@ class LoginPage extends StatelessWidget {
                 }, childText: 'Tax Calculator')
               ],
             ),
+          ),
+          
+          Container(
+            width: loginContWidth(context),
+            child: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(
+                    height: LaSizeBoxHeight(context),
+                  ),
+
+                  Text('Go Ahead & Login',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.green,
+                    fontSize:getFontXXXL(context)
+                  ),),
+
+                  SizedBox(
+                    height: LaSizeBoxHeight(context),
+                  ),
+
+                  Text('It Takes a couples of seconds to login your Account',
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.green,
+                        fontSize:getFontXL(context)
+                    ),),
+
+                  SizedBox(
+                    height: sizeBoxXLHeight(context),
+                  ),
+
+                  Row(
+                    children: [
+                      Container(
+                        margin: EdgeInsets.symmetric(
+                            horizontal: getContHoriMargin(context)),
+                        width: imageContWidth(context),
+                        height: imageContHeight(context),
+                        color: Colors.yellowAccent,
+                      ),
+                      
+                      LoginBox(child: Column(
+                        children: [
+
+                          SizedBox(
+                            height: LaSizeBoxHeight(context),
+                          ),
+
+                          Text('User Login',
+                            style: TextStyle(
+                              fontSize: getFontxXL(context)
+                            ),
+                          ),
+
+                          SizedBox(
+                            height: LaSizeBoxHeight(context),
+                          ),
+
+                          SizedBox(
+                            height: sizeBoxXLHeight(context),
+                          ),
+
+                          Row(
+                            children: [
+                              Column(
+                                children: [
+                                  LoginTextContainer(childText: 'User Name:', fontSize: 23, textColor: Colors.black),
+
+                                  SizedBox(
+                                    height: sizeBoxXLHeight(context),
+                                  ),
+
+                                  LoginTextContainer(childText: 'Password  :', fontSize: 23, textColor: Colors.black)
+                                ],
+                              ),
+
+
+                            ],
+                          )
+
+                        ],
+
+                      ),
+                      ),
+
+                    ],
+                  ),
+
+
+
+                ],
+              ),
+            ),
           )
+
         ],
       ),
     );
