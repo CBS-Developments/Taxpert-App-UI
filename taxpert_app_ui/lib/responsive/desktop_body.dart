@@ -706,7 +706,7 @@ class LoginPage extends StatelessWidget {
                     height: LaSizeBoxHeight(context),
                   ),
 
-                  Text('It Takes a couples of seconds to login your Account',
+                  Text('It takes a couples of seconds to login your account',
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Colors.green,
@@ -763,6 +763,8 @@ class LoginPage extends StatelessWidget {
                                   LoginTextContainer(childText: 'Password  :', fontSize: 23, textColor: Colors.black)
                                 ],
                               ),
+
+
 
 
 
